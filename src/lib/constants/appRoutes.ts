@@ -1,0 +1,16 @@
+export const appRoutes: Record<string, string> = {
+  home_path: '/',
+  create_path: '/create',
+  discover_path: '/discover',
+  staking_path: '/staking',
+  portfolio_path: '/portfolio',
+  vault_path: '/vault',
+  vault_leveraged_path: '/vault-leveraged',
+  privacy_path: '/privacypolicy',
+  studio_path: '/studio',
+  governance_path: '/governance',
+  toc: '/terms-of-service',
+  blocked_countries_path: '/blocked-countries',
+  governance_staking: '/governance/staking',
+  governance_scale: '/governance/scale',
+};

@@ -1,0 +1,7 @@
+{
+  "testnet_faucet_banner": "Get Testnet Funds Here. Please note that Faucet only works on the Hardhat Network.",
+  "discover": "Discover",
+  "connect": "Connect",
+  "connect_to_a_wallet": "Connect to a wallet",
+  "portfolio": "Portfolio"
+}

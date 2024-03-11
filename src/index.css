@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove number type input arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.text-link {
+  color: #3383c5;
+}
+
+body {
+  @apply leading-[normal] m-0;
+  color: #fcfcfc;
+}
+
+/* Rainbow Kit overrides */
+[data-rk] .ju367v9x {
+  background: #1d3557;
+}
+button.iekbcc0.iekbcc9.ju367v71.ju367v7m.ju367v86.ju367v6f.ju367v4.ju367v9x.ju367vn.ju367vec.ju367vfo.ju367va.ju367v11.ju367v1c.ju367v1k.ju367v8o._12cbo8i3.ju367v8m._12cbo8i4._12cbo8i6 {
+  @apply bg-white dark:bg-background text-sm;
+  border: 1px solid #3383c5;
+  padding: 7px;
+  font-size: 12px;
+}
+
+.iekbcc0.ju367v70.ju367v7l.ju367v85.ju367v6e.ju367v9x.ju367vcf.ju367vn.ju367vt.ju367vw.ju367vfo.ju367v11.ju367v1c.ju367v8o {
+  @apply bg-white dark:bg-background;
+  border: 1px solid #3383c5;
+}
+
+[data-rk] .iekbcc0 {
+  font-size: 13px !important;
+}
+
+/* Substack Form */
+#custom-substack-embed form input {
+  @apply bg-white dark:bg-background text-rich_black dark:text-body_light_dark;
+  border: 1px solid #3383c5;
+  border-radius: 0.5rem /* 6px */;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 300px;
+}
+
+#custom-substack-embed form input::placeholder {
+  color: #a8a9b3;
+}
+
+#custom-substack-embed form button {
+  @apply bg-white dark:bg-background text-rich_black dark:text-body_light_dark;
+  border: 1px solid #3383c5;
+  border-radius: 0.5rem; /* 6px */
+}
+
+.custom-substack-widget {
+  border: none !important;
+}
+
+/* Branding/Gradient */
+.gradiant-border {
+  position: relative;
+  padding: 2.5px;
+  background: linear-gradient(55.87deg, #3383c5 19.25%, #29c4b8 80.38%);
+  border-radius: 12px;
+}
+
+.gradiant-border-tag {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(55.87deg, #3383c5 19.25%, #29c4b8 80.38%);
+  border-radius: 12px;
+}
+
+.gradiant-color {
+  background: linear-gradient(55.87deg, #3383c5 19.25%, #29c4b8 80.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  border: 5px solid;
+  border-image: linear-gradient(55.87deg, #3383c5 19.25%, #29c4b8 80.38%);
+}
+
+.muted-text {
+  color: #a8a9b3;
+}
+
+/* Scoll To Top */
+.scrollToTop {
+  scroll-padding-top: 0;
+}
+
+/* Bottom Borders */
+.border-bottom-link {
+  border-bottom: 1px solid #3383c5;
+}
+
+.border-bottom-header {
+  border-bottom: 1px solid rgba(25, 47, 77, 0.3); /* 0.5 is the opacity here */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Placeholder */
+input::placeholder {
+  @apply text-rich_black dark:text-body_light_dark;
+}
+
+@layer components {
+  /* Layout */
+  .page-container {
+    @apply flex flex-col justify-between w-screen pt-8 pb-16 desktop:flex-col mobile:px-4 tablet:px-8 desktop:px-16 dark:bg-background bg-white;
+  }
+
+  /* Text */
+  .rounded-text-box {
+    @apply p-4 rounded-lg bg-white dark:bg-background;
+  }
+
+  /* Typography */
+  .heading {
+    @apply text-2xl font-semibold desktop:text-7xl text-heading_light dark:text-heading_dark;
+  }
+  .data-main-info {
+    @apply text-4xl font-semibold leading-7 tracking-wide text-center font-open_sans text-heading_light dark:text-heading_dark;
+  }
+
+  /* Running Text */
+  .body-regular-15 {
+    @apply text-sm font-normal leading-5 tracking-wide font-open_sans text-body_dark_light dark:text-body_light_dark;
+  }
+  .body-regular-14 {
+    @apply text-xs font-normal leading-5 font-open_sans tracking-wide text-body_dark_light dark:text-body_light_dark;
+  }
+  .body-regular-12 {
+    @apply font-normal leading-5 font-open_sans text-3xs tracking-wide text-body_dark_light dark:text-body_light_dark;
+  }
+  .body-medium-15 {
+    @apply text-sm font-semibold leading-5 tracking-wide font-open_sans text-body_dark_light dark:text-body_light_dark;
+  }
+  .body-medium-14 {
+    @apply text-xs font-semibold leading-5 font-open_sans tracking-wide text-body_dark_light dark:text-body_light_dark;
+  }
+  .body-medium-12 {
+    @apply font-semibold leading-4 font-open_sans text-3xs tracking-wide text-body_dark_light dark:text-body_light_dark;
+  }
+
+  /* Buttons */
+  .base-btn {
+    @apply w-full min-h-[60px] rounded-xl shadow-lg bg-white dark:bg-primary_brand_01 border-none text-sm  font-semibold mt-3 uppercase cursor-pointer disabled:pointer-events-none;
+  }
+
+  .reset-btn {
+    @apply w-full desktop:w-28 h-12 rounded-xl tracking-wider bg-primary_brand_01 text-white cursor-pointer text-xs;
+  }
+
+  .next-btn {
+    @apply min-w-[90px] min-h-[40px] rounded-xl shadow-lg bg-primary_brand_01 border-none text-sm text-white font-semibold uppercase cursor-pointer disabled:pointer-events-none;
+  }
+  .back-btn {
+    @apply min-w-[90px] min-h-[40px] rounded-xl border-none text-sm text-heading_light dark:text-heading_dark font-semibold uppercase cursor-pointer disabled:pointer-events-none;
+    background-color: transparent;
+    border: 1px solid #3383c5;
+  }
+
+  .write-btn {
+    @apply base-btn bg-primary_brand_01 text-heading_dark;
+  }
+
+  .error-btn {
+    @apply base-btn bg-error;
+  }
+
+  .cancel-btn {
+    @apply base-btn bg-border;
+  }
+
+  .preview-btn {
+    @apply base-btn bg-white dark:bg-ui_surface_opc text-heading_light dark:text-heading_dark;
+  }
+
+  .percentage-selector {
+    @apply w-full h-full bg-white dark:bg-ui_surface_opc  rounded-lg border-none body-medium-12 cursor-pointer;
+  }
+
+  .link-btn {
+    @apply w-[170px] h-12 text-heading_dark font-medium bg-primary_brand_01 border-none rounded-xl text-sm text-center cursor-pointer flex items-center justify-center hover:decoration-0 transition-all duration-150;
+  }
+
+  .link-inverted-btn {
+    @apply w-[170px] h-11 text-heading_dark rounded-xl bg-ui_surface_opc text-sm text-center cursor-pointer flex items-center justify-center hover:decoration-0 transition-all duration-150;
+  }
+
+  .tag-btn {
+    @apply py-1 pr-[8.34375px] pl-[9px] bg-white dark:bg-background rounded-lg overflow-hidden flex flex-row items-start justify-start border-[1px] border-solid border-primary_brand_01;
+  }
+
+  .fetch-btn {
+    @apply w-[170px] m-4 text-heading_dark bg-background p-5 border-none rounded-xxl font-medium text-sm h-12 text-center cursor-pointer hover:bg-primary_brand_01 flex items-center justify-center hover:decoration-0 transition-all duration-150;
+  }
+
+  .disclaimer-btn {
+    @apply flex justify-center rounded-xl border-none bg-primary_brand_01 text-white px-4 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer disabled:cursor-default text-center mt-5 disabled:bg-gray-1000;
+  }
+
+  .dialog-btn {
+    @apply inline-flex justify-center rounded-md border px-4 py-2 text-sm font-medium focus:outline-none bg-white dark:bg-ui_surface dark:border-none heading cursor-pointer;
+  }
+
+  .chart-btn {
+    @apply w-full text-heading_light dark:text-heading_dark border-none cursor-pointer p-2.5 font-medium tracking-wide;
+  }
+
+  .discovery-chart-btn {
+    @apply flex items-center justify-center w-full body-medium-14 border-none cursor-pointer p-2 rounded-lg;
+  }
+
+  /* Dropdown Buttons */
+  .dropdown-btn {
+    @apply inline-flex flex-row items-center justify-between w-full transition-all duration-75 border-none cursor-pointer ui-open:rounded-t-md text-heading_dark ring-rich_black;
+  }
+
+  .asset-dropdown-btn {
+    @apply dropdown-btn bg-white dark:bg-background px-3.5 h-[34px] ui-not-open:rounded-2xl w-[124px] uppercase;
+  }
+
+  .metrics-dropdown-btn {
+    @apply dropdown-btn bg-border px-3 h-[38px] ui-not-open:rounded-xs desktop:w-[210px];
+  }
+
+  .filter-dropdown-btn {
+    @apply dropdown-btn bg-white dark:bg-ui_surface_opc px-3.5 h-[42px] ui-not-open:rounded-xl ui-open:rounded-xl body-regular-14 placeholder:text-error;
+  }
+
+  /* Dropdown Menu's */
+  .dropdown-menu {
+    @apply overflow-y-auto h-[300px] absolute  z-10 flex flex-col w-full origin-top shadow-lg cursor-pointer rounded-b-md ring-rich_black ring-opacity-5 focus:outline-none;
+  }
+
+  .asset-dropdown-menu {
+    @apply dropdown-menu bg-white dark:bg-background heading w-[124px] ui-not-open:rounded-xl;
+  }
+
+  .metrics-dropdown-menu {
+    @apply dropdown-menu bg-border heading desktop:w-[210px] ui-not-open:rounded-xl;
+  }
+
+  .filter-dropdown-menu {
+    @apply dropdown-menu bg-white dark:bg-ui_surface_opc body-regular-14 ui-not-open:rounded-xl overflow-y-auto;
+  }
+
+  /* Rounded box shadow */
+  .rounded-box-shadow {
+    @apply rounded-2xl shadow-lg box-border border-[1px] border-solid border-gray-1400;
+  }
+
+  /* Mixer Divider */
+  .mixer-divider {
+    @apply min-w-[30px] min-h-[16px] flex-grow flex flex-row justify-end items-center relative;
+  }
+
+  .mixer-divider::after {
+    @apply bg-primary_brand_01;
+    position: absolute;
+    content: '';
+    height: 2px;
+    top: 50%;
+    left: 0px;
+    right: 2px;
+    transform: translateY(-1px);
+  }
+}
